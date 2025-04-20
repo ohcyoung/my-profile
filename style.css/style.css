@@ -1,13 +1,59 @@
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    text-align: center;
-    margin: 50px;
-  }
-  
-  img {
-    border-radius: 50%;
-    border: 3px solid #333;
-  }
-  
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Container to center content */
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+/* White cards for content */
+.card-white {
+  background: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Circle profile picture */
+.img-circle {
+  border-radius: 50%;
+  border: 3px solid #333;
+  margin: 20px 0;
+}
+
+/* Blue button style */
+.btn-blue {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+/* Inline social icons list */
+.list-inline {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 0 15px;
+}
