@@ -20,10 +20,26 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Styling for the profile picture */
-.card-white img {
+/* Profile image round */
+.profile-img {
   border-radius: 50%;
   margin-bottom: 15px;
+}
+
+/* Link Styling for the button */
+.button-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
 }
 
 /* Link Styling */
@@ -43,13 +59,14 @@ a:hover {
 }
 
 /* Social Media links list */
-ul {
-  list-style-type: none;
-  padding: 0;
+.list-inline {
+  list-style: none; /* kill the bullet points */
+  padding-left: 0px; /* kill remaining padding left */
 }
 
-ul li {
-  margin: 10px 0;
+.list-inline > li {
+  display: inline; /* change list item behavior to inline */
+  padding: 0px 20px; /* add some left/right padding between list items */
 }
 
 ul li a {
