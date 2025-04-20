@@ -52,7 +52,7 @@ p {
 }
 
 /* Profile picture styling */
-img {
+.profile-img {
   border-radius: 50%;
   border: 3px solid #333;
   margin-bottom: 20px;
