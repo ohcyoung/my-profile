@@ -13,24 +13,35 @@ body {
   margin: 50px;
   font-size: 16px;
   line-height: 1.6;
+  font-weight: 400; /* Normal weight */
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 1px;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   color: #2c3e50;
   margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 2.5em;
   color: #34495e;
   margin-top: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #2c3e50;
   margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 /* Paragraphs */
@@ -45,6 +56,7 @@ img {
   border-radius: 50%;
   border: 3px solid #333;
   margin-bottom: 20px;
+  width: 200px; /* Adjust the size */
 }
 
 /* Link styling */
@@ -63,6 +75,7 @@ a:hover {
 ul {
   list-style-type: none;
   margin-top: 20px;
+  padding-left: 0;
 }
 
 ul li {
@@ -90,26 +103,12 @@ body {
 body {
   font-size: 18px;
   line-height: 1.8;
-  letter-spacing: 1px;
 }
 
 /* Styling header tags */
 h1, h2, h3 {
   font-family: 'Helvetica', sans-serif;
   letter-spacing: 2px;
-}
-
-h1 {
-  font-size: 3em;
-  line-height: 1.2;
-}
-
-h2 {
-  font-size: 2.5em;
-}
-
-h3 {
-  font-size: 1.8em;
 }
 
 /* Text decoration for links */
@@ -124,4 +123,36 @@ body {
 
 h1, h2, h3 {
   font-weight: bold;
+}
+
+/* Styling for the button link (for introduction section) */
+.button-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for spacing between text and button in introduction */
+.card-white p {
+  margin-bottom: 30px; /* Adjust space between text and button */
+}
+
+/* Inline list for social links */
+.list-inline {
+  list-style: none; /* kill the bullet points */
+  padding-left: 0px; /* kill remaining padding left */
+}
+
+.list-inline > li {
+  display: inline; /* change list item behavior to inline */
+  padding: 0px 20px; /* add some left/right padding between list items */
 }
