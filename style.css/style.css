@@ -1,4 +1,4 @@
-/* Basic reset and styling */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,152 +7,94 @@
 
 body {
   font-family: 'Helvetica', sans-serif;
-  background-color: rgb(240, 240, 240); /* Background color */
-  color: rgb(30, 30, 30); /* Text color */
-  text-align: center;
-  margin: 50px;
+  background-color: #f0f0f0;
   font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400; /* Normal weight */
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
+  color: #2c3e50;
+}
+
+/* Centering container */
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+/* Card design */
+.card-white {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+.card-white:hover {
+  transform: translateY(-5px);
+}
+
+/* Title styles */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
-h1 {
-  font-size: 3em;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
 h2 {
-  font-size: 2.5em;
+  font-size: 28px;
+  margin-bottom: 15px;
   color: #34495e;
-  margin-top: 40px;
-  font-weight: bold;
-  letter-spacing: 2px;
 }
 
-h3 {
-  font-size: 1.8em;
-  color: #2c3e50;
-  margin-top: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-/* Paragraphs */
 p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* Profile picture styling */
-.profile-img {
-  border-radius: 50%;
-  border: 3px solid #333;
-  margin-bottom: 20px;
-  width: 200px; /* Adjust the size */
-}
-
-/* Link styling */
-a {
-  color: #3498db;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #e74c3c;
-  text-decoration: underline;
-}
-
-/* Social links list */
-ul {
-  list-style-type: none;
-  margin-top: 20px;
-  padding-left: 0;
-}
-
-ul li {
-  display: inline;
-  margin-right: 15px;
-}
-
-ul li a {
-  font-size: 1.5em;
-  color: #333;
-}
-
-ul li a:hover {
-  color: #3498db;
-}
-
-/* Adding background image */
-body {
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-/* Font size & spacing */
-body {
   font-size: 18px;
-  line-height: 1.8;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-/* Styling header tags */
-h1, h2, h3 {
-  font-family: 'Helvetica', sans-serif;
-  letter-spacing: 2px;
+/* Profile image */
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #3498db;
+  margin-bottom: 20px;
 }
 
-/* Text decoration for links */
-a {
-  text-decoration: none;
-}
-
-/* Font weight adjustments */
-body {
-  font-weight: 400; /* Normal weight */
-}
-
-h1, h2, h3 {
-  font-weight: bold;
-}
-
-/* Styling for the button link (for introduction section) */
+/* Button link */
 .button-link {
   display: inline-block;
-  background-color: #007bff;
+  background-color: #3498db;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
+  text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  text-decoration: none;
 }
 
 .button-link:hover {
-  background-color: #0056b3;
+  background-color: #2980b9;
 }
 
-/* Styling for spacing between text and button in introduction */
-.card-white p {
-  margin-bottom: 30px; /* Adjust space between text and button */
-}
-
-/* Inline list for social links */
+/* Social links */
 .list-inline {
-  list-style: none; /* kill the bullet points */
-  padding-left: 0px; /* kill remaining padding left */
+  list-style: none;
+  padding-left: 0;
 }
 
-.list-inline > li {
-  display: inline; /* change list item behavior to inline */
-  padding: 0px 20px; /* add some left/right padding between list items */
+.list-inline li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.list-inline a {
+  font-size: 20px;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.list-inline a:hover {
+  color: #3498db;
 }
