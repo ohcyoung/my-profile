@@ -1,158 +1,103 @@
-/* Basic reset and styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Colors and fonts */
+body {
+  background: #F7F9FC;
+  color: #575F7D;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: lighter;
 }
 
-body {
-  font-family: 'Helvetica', sans-serif;
-  background-color: rgb(240, 240, 240); /* Background color */
-  color: rgb(30, 30, 30); /* Text color */
-  text-align: center;
-  margin: 50px;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 400; /* Normal weight */
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
-  letter-spacing: 1px;
+h1, h2, h3 {
+  font-family: "Roboto", serif;
 }
 
 h1 {
-  font-size: 3em;
-  color: #2c3e50;
-  margin-bottom: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  color: #575F7D;
+  font-size: 32px;
+  font-weight: 900;
 }
 
 h2 {
-  font-size: 2.5em;
-  color: #34495e;
-  margin-top: 40px;
-  font-weight: bold;
-  letter-spacing: 2px;
+  color: #7ECE90;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-h3 {
-  font-size: 1.8em;
-  color: #2c3e50;
-  margin-top: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-/* Paragraphs */
-p {
-  font-size: 1.2em;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-/* Profile picture styling */
-.profile-img {
-  border-radius: 50%;
-  border: 3px solid #333;
-  margin-bottom: 20px;
-  width: 200px; /* Adjust the size */
-}
-
-/* Link styling */
 a {
-  color: #3498db;
+  font-family: "Roboto", serif;
   text-decoration: none;
-  transition: color 0.3s ease;
+  color: #6B72E1;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 a:hover {
-  color: #e74c3c;
-  text-decoration: underline;
+  color: black;
 }
 
-/* Social links list */
-ul {
-  list-style-type: none;
-  margin-top: 20px;
-  padding-left: 0;
+/* Custom design with class */
+.container {
+  width: 700px;
+  margin: 40px auto;
 }
 
-ul li {
-  display: inline;
-  margin-right: 15px;
+@media (max-width: 760px) {
+  .container {
+    width: 600px;
+  }
 }
 
-ul li a {
-  font-size: 1.5em;
-  color: #333;
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
 }
 
-ul li a:hover {
-  color: #3498db;
+.card-white {
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 20px 0px;
+  text-align: center;
 }
 
-/* Adding background image */
-body {
-  background-image: url('images/background.jpg');
-  background-size: cover;
-  background-position: center;
+.img-circle {
+  border-radius: 50%;
 }
 
-/* Font size & spacing */
-body {
-  font-size: 18px;
-  line-height: 1.8;
-}
-
-/* Styling header tags */
-h1, h2, h3 {
-  font-family: 'Helvetica', sans-serif;
-  letter-spacing: 2px;
-}
-
-/* Text decoration for links */
-a {
-  text-decoration: none;
-}
-
-/* Font weight adjustments */
-body {
-  font-weight: 400; /* Normal weight */
-}
-
-h1, h2, h3 {
-  font-weight: bold;
-}
-
-/* Styling for the button link (for introduction section) */
-.button-link {
-  display: inline-block;
-  background-color: #007bff;
+.btn-blue {
+  background-color: #6B72E1;
   color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 4px;
 }
 
-.button-link:hover {
-  background-color: #0056b3;
+.btn-blue:hover {
+  background-color: black;
+  color: white;
 }
 
-/* Styling for spacing between text and button in introduction */
-.card-white p {
-  margin-bottom: 30px; /* Adjust space between text and button */
-}
-
-/* Inline list for social links */
 .list-inline {
-  list-style: none; /* kill the bullet points */
-  padding-left: 0px; /* kill remaining padding left */
+  list-style: none;
+  padding-left: 0px;
 }
 
-.list-inline > li {
-  display: inline; /* change list item behavior to inline */
-  padding: 0px 20px; /* add some left/right padding between list items */
+.list-inline li {
+  display: inline;
+  padding: 10px;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+
+.list-inline i:hover {
+  font-size: 50px;
+  color: rgb(230, 230, 230);
+}
+
+#introduction p {
+  margin-bottom: 40px;
 }
