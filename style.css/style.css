@@ -1,4 +1,4 @@
-/* 기본 초기화 */
+/* Basic reset and styling */
 * {
   margin: 0;
   padding: 0;
@@ -6,64 +6,153 @@
 }
 
 body {
-  background-color: #f8f9fa;
-  font-family: Arial, sans-serif;
+  font-family: 'Helvetica', sans-serif;
+  background-color: rgb(240, 240, 240); /* Background color */
+  color: rgb(30, 30, 30); /* Text color */
+  text-align: center;
+  margin: 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400; /* Normal weight */
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 3em;
   color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-/* 카드들을 감싸는 컨테이너 */
-.container {
-  width: 700px;
-  margin: 50px auto;
+h2 {
+  font-size: 2.5em;
+  color: #34495e;
+  margin-top: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-/* 카드 스타일 */
-.card-white {
-  background-color: white;
-  border-radius: 10px;
-  padding: 30px;
-  margin-bottom: 30px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
-  transition: transform 0.2s ease;
+h3 {
+  font-size: 1.8em;
+  color: #2c3e50;
+  margin-top: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.card-white:hover {
-  transform: translateY(-5px);
+/* Paragraphs */
+p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-/* 제목 및 이미지 */
-h1, h2 {
-  margin-bottom: 15px;
-}
-
+/* Profile picture styling */
 .profile-img {
-  width: 150px;
-  height: 150px;
   border-radius: 50%;
-  display: block;
-  margin: 20px auto;
-  border: 3px solid #3498db;
+  border: 3px solid #333;
+  margin-bottom: 20px;
+  width: 200px; /* Adjust the size */
 }
 
-/* 리스트 인라인 스타일 */
-.list-inline {
-  list-style: none;
+/* Link styling */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+/* Social links list */
+ul {
+  list-style-type: none;
+  margin-top: 20px;
   padding-left: 0;
-  margin-top: 10px;
 }
 
-.list-inline li {
+ul li {
   display: inline;
   margin-right: 15px;
 }
 
-.list-inline a {
+ul li a {
+  font-size: 1.5em;
+  color: #333;
+}
+
+ul li a:hover {
   color: #3498db;
+}
+
+/* Adding background image */
+body {
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Font size & spacing */
+body {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Styling header tags */
+h1, h2, h3 {
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Text decoration for links */
+a {
   text-decoration: none;
+}
+
+/* Font weight adjustments */
+body {
+  font-weight: 400; /* Normal weight */
+}
+
+h1, h2, h3 {
   font-weight: bold;
 }
 
-.list-inline a:hover {
-  text-decoration: underline;
+/* Styling for the button link (for introduction section) */
+.button-link {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for spacing between text and button in introduction */
+.card-white p {
+  margin-bottom: 30px; /* Adjust space between text and button */
+}
+
+/* Inline list for social links */
+.list-inline {
+  list-style: none; /* kill the bullet points */
+  padding-left: 0px; /* kill remaining padding left */
+}
+
+.list-inline > li {
+  display: inline; /* change list item behavior to inline */
+  padding: 0px 20px; /* add some left/right padding between list items */
 }
